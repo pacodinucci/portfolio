@@ -21,7 +21,7 @@ export default function Home() {
           <section className="min-h-screen">
             <nav className={'py-10 mb-12 flex justify-end font-anaheim'}>
               {/* <h1 className='text-xl font-burtons'>welcome,</h1> */}
-              <ul className='flex justify-around gap-10'>
+              <ul className='flex justify-around md:gap-10'>
                 {/* <li>
                   <BsFillMoonStarsFill className='cursor-pointer text-2xl' onClick={() => setDarkMode(!darkMode)}/>
                 </li> */}
