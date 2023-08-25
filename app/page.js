@@ -4,15 +4,6 @@ import {BsFillMoonStarsFill} from 'react-icons/bs';
 import {AiFillLinkedin, AiFillGithub, AiFillMail, AiOutlineDoubleRight} from 'react-icons/ai'
 import Image from 'next/image';
 import devfr from '../public/devfr.png';
-import code from '../public/code.png';
-import consulting from '../public/consulting.png';
-import design from '../public/design.png';
-import web1 from '../public/web1.png';
-import web2 from '../public/web2.png';
-import web3 from '../public/web3.png';
-import web4 from '../public/web4.png';
-import web5 from '../public/web5.png';
-import web6 from '../public/web6.png';
 import project1 from '../public/follow.png';
 import project2 from '../public/coin.png';
 import project3 from '../public/captura-countries.png';
@@ -56,7 +47,7 @@ export default function Home() {
                 </div>
               </div>
               <div className='relative mx-auto rounded-[70%/60%_10%_65%_90%] drop-shadow-[0px_15px_3px_rgba(0,0,0,0.25)] w-100 h-80 my-20 overflow-hidden md:h-96 md:w-96'>
-                <Image src={devfr} layout='fill' objectFit='cover'/>
+                <Image src={devfr} layout='fill' objectFit='cover' alt=''/>
               </div>
             </div>
           </section>
@@ -85,8 +76,8 @@ export default function Home() {
             </div>
             <div className='grid grid-cols-2 gap-10 py-10 relative'>
               <div className='relative group'>
-                <Image src={project1} className='rounded-lg object-cover h-80 w-full transform transition-transform duration-500 group-hover:scale-105' layout='responsive' />
-                <div className='rounded-lg absolute inset-0 bg-black bg-opacity-50 opacity-0 transform transition-transform transition-opacity duration-500 group-hover:opacity-100 group-hover:scale-105 flex flex-col justify-end'>
+                <Image src={project1} className='rounded-lg object-cover h-80 w-full transform transition-transform duration-500 group-hover:scale-105' layout='responsive' alt='' />
+                <div className='rounded-lg absolute inset-0 bg-black bg-opacity-50 opacity-0 transform transition-opacity duration-500 group-hover:opacity-100 group-hover:scale-105 flex flex-col justify-end'>
                   <div className='flex flex-col gap-4 p-6 text-white'>
                     <h3 className='text-2xl font-anaheim font-bold'>Follow The Money</h3>
                     <p className='font-firaSans text-l'>User fiendly app to track your incomes, expenses and delve into transaction details. Simplify money management on the go.</p>
@@ -96,16 +87,35 @@ export default function Home() {
                 </div>
               </div>
               <div className='relative group'>
-                <Image src={project2} className='rounded-lg object-cover h-80 w-full transform transition-transform duration-500 group-hover:scale-105' layout='responsive' />
-                <div className='rounded-lg absolute inset-0 bg-black bg-opacity-50 opacity-0 transform transition-transform transition-opacity duration-500 group-hover:opacity-100 group-hover:scale-105'></div>
+                <Image src={project2} className='rounded-lg object-cover h-80 w-full transform transition-transform duration-500 group-hover:scale-105' layout='responsive' alt='' />
+                <div className='rounded-lg absolute inset-0 bg-black bg-opacity-50 opacity-0 transform transition-transform transition-opacity duration-500 group-hover:opacity-100 group-hover:scale-105 flex flex-col justify-end'>
+                  <div className='flex flex-col gap-4 p-6 text-white'>
+                      <h3 className='text-2xl font-anaheim font-bold'>Crypto Prices</h3>
+                      <p className='font-firaSans text-l'>Handy Cryptocoin Price Tracker Connected to CoinGecko API</p>
+                      <p className='font-firaSans text-l'>React Native</p>
+                  </div>
+                </div>
               </div>
               <div className='relative group'>
-                <Image src={project3} className='rounded-lg object-cover h-80 w-full transform transition-transform duration-500 group-hover:scale-105' layout='responsive' />
-                <div className='rounded-lg absolute inset-0 bg-black bg-opacity-50 opacity-0 transform transition-transform transition-opacity duration-500 group-hover:opacity-100 group-hover:scale-105'></div>
+                <Image src={project3} className='rounded-lg object-cover h-80 w-full transform transition-transform duration-500 group-hover:scale-105' layout='responsive' alt='' />
+                <div className='rounded-lg absolute inset-0 bg-black bg-opacity-50 opacity-0 transform transition-transform transition-opacity duration-500 group-hover:opacity-100 group-hover:scale-105 flex flex-col justify-end'>
+                  <div className='flex flex-col gap-4 p-6 text-white'>
+                      <h3 className='text-2xl font-anaheim font-bold'>Countries</h3>
+                      <p className='font-firaSans text-l'>PERN app made for Soy Henry Institution. Discover countries worldwide through an API-connected app. Access country info, sorted by continent. Create, store, and manage personalized activities for each country in a streamlined interface. </p>
+                      <p className='font-firaSans text-l'>NodeJS, React, Express, Postgres, Redux.</p>
+                      <a href="http://pi-countries-zeta-rosy.vercel.app" className='font-anaheim font-bold text-amber-700'>pi-countries-zeta-rosy.vercel.app</a>
+                  </div>
+                </div>
               </div>
               <div className='relative group'>
-                <Image src={project4} className='rounded-lg object-cover h-80 w-full transform transition-transform duration-500 group-hover:scale-105' layout='responsive' />
-                <div className='rounded-lg absolute inset-0 bg-black bg-opacity-50 opacity-0 transform transition-transform transition-opacity duration-500 group-hover:opacity-100 group-hover:scale-105'></div>
+                <Image src={project4} className='rounded-lg object-cover h-80 w-full transform transition-transform duration-500 group-hover:scale-105' layout='responsive' alt='' />
+                <div className='rounded-lg absolute inset-0 bg-black bg-opacity-50 opacity-0 transform transition-opacity duration-500 group-hover:opacity-100 group-hover:scale-105 flex flex-col justify-end'>
+                  <div className='flex flex-col gap-4 p-6 text-white'>
+                        <h3 className='text-2xl font-anaheim font-bold'>Chat</h3>
+                        <p className='font-firaSans text-l'>Real time experimental chat. </p>
+                        <p className='font-firaSans text-l'>NodeJS, Express, React, Socket.io, Tailwindcss</p>
+                    </div>
+                </div>
               </div>
             </div>
           </section>
