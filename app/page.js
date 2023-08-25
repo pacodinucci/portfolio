@@ -78,10 +78,10 @@ export default function Home() {
               <div className='relative group'>
                 <Image src={project1} className='rounded-lg object-cover h-80 w-full transform transition-transform duration-500 group-hover:scale-105' layout='responsive' alt='' />
                 <div className='rounded-lg absolute inset-0 bg-black bg-opacity-50 opacity-0 transform transition-opacity duration-500 group-hover:opacity-100 group-hover:scale-105 flex flex-col justify-end'>
-                  <div className='flex flex-col gap-4 p-6 text-white'>
-                    <h3 className='text-2xl font-anaheim font-bold'>Follow The Money</h3>
-                    <p className='font-firaSans text-l'>User fiendly app to track your incomes, expenses and delve into transaction details. Simplify money management on the go.</p>
-                    <p className='font-firaSans text-l'>NextJS, React, Tailwindcss, Firebase Authentication and Firestore.</p>
+                  <div className='flex flex-col md:gap-4 p-6 text-white'>
+                    <h3 className='text-l md:text-2xl font-anaheim font-bold'>Follow The Money</h3>
+                    <p className='font-firaSans text-xs md:text-l'>User fiendly app to track your incomes, expenses and delve into transaction details. Simplify money management on the go.</p>
+                    <p className='font-firaSans text-xs md:text-l'>NextJS, React, Tailwindcss, Firebase Authentication and Firestore.</p>
                     <a href="http://followthemoney.vercel.app" className='font-anaheim font-bold text-amber-700'>followthemoney.vercel.app</a>
                   </div>
                 </div>
@@ -99,10 +99,10 @@ export default function Home() {
               <div className='relative group'>
                 <Image src={project3} className='rounded-lg object-cover h-80 w-full transform transition-transform duration-500 group-hover:scale-105' layout='responsive' alt='' />
                 <div className='rounded-lg absolute inset-0 bg-black bg-opacity-50 opacity-0 transform transition-transform transition-opacity duration-500 group-hover:opacity-100 group-hover:scale-105 flex flex-col justify-end'>
-                  <div className='flex flex-col gap-4 p-6 text-white'>
-                      <h3 className='text-2xl font-anaheim font-bold'>Countries</h3>
-                      <p className='font-firaSans text-l'>PERN app made for Soy Henry Institution. Discover countries worldwide through an API-connected app. Access country info, sorted by continent. Create, store, and manage personalized activities for each country in a streamlined interface. </p>
-                      <p className='font-firaSans text-l'>NodeJS, React, Express, Postgres, Redux.</p>
+                  <div className='flex flex-col md:gap-4 p-6 text-white'>
+                      <h3 className='text-l md:text-2xl font-anaheim font-bold'>Countries</h3>
+                      <p className='font-firaSans text-xs md:text-l'>PERN app made for Soy Henry Institution. Discover countries worldwide through an API-connected app. Access country info, sorted by continent. Create, store, and manage personalized activities for each country in a streamlined interface. </p>
+                      <p className='font-firaSans text-xs md:text-l'>NodeJS, React, Express, Postgres, Redux.</p>
                       <a href="http://pi-countries-zeta-rosy.vercel.app" className='font-anaheim font-bold text-amber-700'>pi-countries-zeta-rosy.vercel.app</a>
                   </div>
                 </div>
