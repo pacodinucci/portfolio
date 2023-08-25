@@ -16,7 +16,7 @@ export default function Home() {
 
   return (
       <div className={darkMode ? 'dark' : ''}>
-        <main className=' bg-slate-900 px-10 md:px-20'>
+        <main className=' bg-slate-900 px-4 md:px-8'>
           <div>
           <section className="min-h-screen">
             <nav className={'py-10 mb-12 flex justify-end font-anaheim'}>
@@ -32,10 +32,10 @@ export default function Home() {
                 <li><a href="#" className='border-2 border-amber-700 rounded-sm text-white px-4 py-2 ml-4 hover:bg-amber-700 transition-bg'>Resume</a></li>
               </ul>
             </nav>
-            <div className='flex align-middle'>
+            <div className='flex flex-col-reverse md:flex-row align-middle'>
               <div className='text-left p-10 flex flex-col justify-center'>
-                <h4 className='text-xl py-2 text-zinc-400 font-anaheim font-medium md:text-2xl'>Hi, my name is</h4>
-                <h2 className='text-4xl py-2 text-zinc-100 font-firaSans font-bold md:text-6xl'>Francisco Di Nucci</h2>
+                <h4 className='text-3xl py-2 text-zinc-400 font-anaheim font-medium md:text-2xl'>Hi, my name is</h4>
+                <h2 className='text-6xl py-2 text-zinc-100 font-firaSans font-bold md:text-6xl'>Francisco Di Nucci</h2>
                 <h3 className='text-2xl py-2 text-zinc-200 font-firaSans md:text-3xl'>I am a Fullstack Developer.</h3>
                 <p className='text-md py-5 leading-8 text-zinc-300 font-firaSans md:text-xl max-w-xl mx-auto'>I am a highly motivated individual with a passion for programming 
                                   and a strong foundation in JavaScript, Node.js, and React. 
@@ -46,7 +46,7 @@ export default function Home() {
                   <AiFillMail />
                 </div>
               </div>
-              <div className='relative mx-auto rounded-[70%/60%_10%_65%_90%] drop-shadow-[0px_15px_3px_rgba(0,0,0,0.25)] w-100 h-80 my-20 overflow-hidden md:h-96 md:w-96'>
+              <div className='relative mx-auto rounded-[70%/60%_45%_80%_90%] md:rounded-[70%/60%_45%_65%_90%] drop-shadow-[0px_15px_3px_rgba(0,0,0,0.25)] w-40 h-40 md:my-20 overflow-hidden md:h-96 md:w-96'>
                 <Image src={devfr} layout='fill' objectFit='cover' alt=''/>
               </div>
             </div>
@@ -74,7 +74,7 @@ export default function Home() {
             <div>
               <h4 className='text-xl text-center py-3 text-zinc-100 font-anaheim font-medium md:text-2xl'><span className='text-amber-700 font-bold tracking-wide'>02.</span> Projects</h4>
             </div>
-            <div className='grid grid-cols-2 gap-10 py-10 relative'>
+            <div className='grid grid-cols-1 gap-10 py-10 relative md:grid-cols-2 md:gap-10 md:py-10'>
               <div className='relative group'>
                 <Image src={project1} className='rounded-lg object-cover h-80 w-full transform transition-transform duration-500 group-hover:scale-105' layout='responsive' alt='' />
                 <div className='rounded-lg absolute inset-0 bg-black bg-opacity-50 opacity-0 transform transition-opacity duration-500 group-hover:opacity-100 group-hover:scale-105 flex flex-col justify-end'>
