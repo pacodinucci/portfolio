@@ -90,9 +90,9 @@ export default function Home() {
                 <Image src={project2} className='rounded-lg object-cover h-80 w-full transform transition-transform duration-500 group-hover:scale-105' layout='responsive' alt='' />
                 <div className='rounded-lg absolute inset-0 bg-black bg-opacity-50 opacity-0 transform transition-transform transition-opacity duration-500 group-hover:opacity-100 group-hover:scale-105 flex flex-col justify-end'>
                   <div className='flex flex-col gap-4 p-6 text-white'>
-                      <h3 className='text-2xl font-anaheim font-bold'>Crypto Prices</h3>
-                      <p className='font-firaSans text-l'>Handy Cryptocoin Price Tracker Connected to CoinGecko API</p>
-                      <p className='font-firaSans text-l'>React Native</p>
+                      <h3 className='text-l md:text-2xl font-anaheim font-bold'>Crypto Prices</h3>
+                      <p className='font-firaSans text-xs md:text-l'>Handy Cryptocoin Price Tracker Connected to CoinGecko API</p>
+                      <p className='font-firaSans text-xs md:text-l'>React Native</p>
                   </div>
                 </div>
               </div>
@@ -111,9 +111,9 @@ export default function Home() {
                 <Image src={project4} className='rounded-lg object-cover h-80 w-full transform transition-transform duration-500 group-hover:scale-105' layout='responsive' alt='' />
                 <div className='rounded-lg absolute inset-0 bg-black bg-opacity-50 opacity-0 transform transition-opacity duration-500 group-hover:opacity-100 group-hover:scale-105 flex flex-col justify-end'>
                   <div className='flex flex-col gap-4 p-6 text-white'>
-                        <h3 className='text-2xl font-anaheim font-bold'>Chat</h3>
-                        <p className='font-firaSans text-l'>Real time experimental chat. </p>
-                        <p className='font-firaSans text-l'>NodeJS, Express, React, Socket.io, Tailwindcss</p>
+                        <h3 className='text-l md:text-2xl font-anaheim font-bold'>Chat</h3>
+                        <p className='font-firaSans text-l md:text-l'>Real time experimental chat. </p>
+                        <p className='font-firaSans text-l md:text-l'>NodeJS, Express, React, Socket.io, Tailwindcss</p>
                     </div>
                 </div>
               </div>
