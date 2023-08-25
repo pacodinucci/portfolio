@@ -13,6 +13,11 @@ import web3 from '../public/web3.png';
 import web4 from '../public/web4.png';
 import web5 from '../public/web5.png';
 import web6 from '../public/web6.png';
+import project1 from '../public/follow.png';
+import project2 from '../public/coin.png';
+import project3 from '../public/captura-countries.png';
+import project4 from '../public/chatproject.png';
+
 
 
 export default function Home() {
@@ -20,7 +25,7 @@ export default function Home() {
 
   return (
       <div className={darkMode ? 'dark' : ''}>
-        <main className='relative bg-slate-900 px-10 md:px-20 lg:px-40'>
+        <main className=' bg-slate-900 px-10 md:px-20'>
           <div>
           <section className="min-h-screen">
             <nav className={'py-10 mb-12 flex justify-end font-anaheim'}>
@@ -54,10 +59,7 @@ export default function Home() {
                 <Image src={devfr} layout='fill' objectFit='cover'/>
               </div>
             </div>
-            
-           
           </section>
-
           <section>
             <div className='min-h-screen'>
               <h4 className='text-xl text-center py-3 text-zinc-100 font-anaheim font-medium md:text-2xl'><span className='text-amber-700 font-bold tracking-wide'>01.</span> About Me</h4>
@@ -81,24 +83,29 @@ export default function Home() {
             <div>
               <h4 className='text-xl text-center py-3 text-zinc-100 font-anaheim font-medium md:text-2xl'><span className='text-amber-700 font-bold tracking-wide'>02.</span> Projects</h4>
             </div>
-            <div className='flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap'>
-              <div className='basis-1/3 flex-1'>
-                <Image src={web1} className='rounded-lg object-cover' width={"100%"} height={"100%"} layout='responsive' />
+            <div className='grid grid-cols-2 gap-10 py-10 relative'>
+              <div className='relative group'>
+                <Image src={project1} className='rounded-lg object-cover h-80 w-full transform transition-transform duration-500 group-hover:scale-105' layout='responsive' />
+                <div className='rounded-lg absolute inset-0 bg-black bg-opacity-50 opacity-0 transform transition-transform transition-opacity duration-500 group-hover:opacity-100 group-hover:scale-105 flex flex-col justify-end'>
+                  <div className='flex flex-col gap-4 p-6 text-white'>
+                    <h3 className='text-2xl font-anaheim font-bold'>Follow The Money</h3>
+                    <p className='font-firaSans text-l'>User fiendly app to track your incomes, expenses and delve into transaction details. Simplify money management on the go.</p>
+                    <p className='font-firaSans text-l'>NextJS, React, Tailwindcss, Firebase Authentication and Firestore.</p>
+                    <a href="http://followthemoney.vercel.app" className='font-anaheim font-bold text-amber-700'>followthemoney.vercel.app</a>
+                  </div>
+                </div>
               </div>
-              <div className='basis-1/3 flex-1'>
-                <Image src={web2} className='rounded-lg object-cover' width={"100%"} height={"100%"} layout='responsive' />
+              <div className='relative group'>
+                <Image src={project2} className='rounded-lg object-cover h-80 w-full transform transition-transform duration-500 group-hover:scale-105' layout='responsive' />
+                <div className='rounded-lg absolute inset-0 bg-black bg-opacity-50 opacity-0 transform transition-transform transition-opacity duration-500 group-hover:opacity-100 group-hover:scale-105'></div>
               </div>
-              <div className='basis-1/3 flex-1'>
-                <Image src={web3} className='rounded-lg object-cover' width={"100%"} height={"100%"} layout='responsive' />
+              <div className='relative group'>
+                <Image src={project3} className='rounded-lg object-cover h-80 w-full transform transition-transform duration-500 group-hover:scale-105' layout='responsive' />
+                <div className='rounded-lg absolute inset-0 bg-black bg-opacity-50 opacity-0 transform transition-transform transition-opacity duration-500 group-hover:opacity-100 group-hover:scale-105'></div>
               </div>
-              <div className='basis-1/3 flex-1'>
-                <Image src={web4} className='rounded-lg object-cover' width={"100%"} height={"100%"} layout='responsive' />
-              </div>
-              <div className='basis-1/3 flex-1'>
-                <Image src={web5} className='rounded-lg object-cover' width={"100%"} height={"100%"} layout='responsive' />
-              </div>
-              <div className='basis-1/3 flex-1'>
-                <Image src={web6} className='rounded-lg object-cover' width={"100%"} height={"100%"} layout='responsive' />
+              <div className='relative group'>
+                <Image src={project4} className='rounded-lg object-cover h-80 w-full transform transition-transform duration-500 group-hover:scale-105' layout='responsive' />
+                <div className='rounded-lg absolute inset-0 bg-black bg-opacity-50 opacity-0 transform transition-transform transition-opacity duration-500 group-hover:opacity-100 group-hover:scale-105'></div>
               </div>
             </div>
           </section>
