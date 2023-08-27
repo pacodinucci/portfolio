@@ -19,17 +19,11 @@ export default function Home() {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  const DownloadButton = () => {
-    return (
-      <a href="../public/resume.pdf" download>
-        <button>Descargar PDF</button>
-      </a>
-    );
-  };
+  
 
   return (
       <div className={darkMode ? 'dark' : ''}>
-        <main className=' bg-slate-800 px-4 md:px-8'>
+        <main className=' bg-slate-800 px-4 md:px-8 scroll-smooth'>
           <div>
           <section className="min-h-screen">
             <nav className={'py-10 mb-12 flex justify-end font-anaheim'}>
@@ -41,8 +35,8 @@ export default function Home() {
                 {/* <li>
                   <BsFillMoonStarsFill className='cursor-pointer text-2xl' onClick={() => setDarkMode(!darkMode)}/>
                 </li> */}
-                <li className='text-zinc-400 cursor-pointer hover:text-white'><span className='text-amber-700 font-bold tracking-wide'>01.</span> About</li>
-                <li className='text-zinc-400 cursor-pointer hover:text-white'><span className='text-amber-700 font-bold tracking-wide'>02.</span> Projects</li>
+                <li className='text-zinc-400 cursor-pointer hover:text-white'><span className='text-amber-700 font-bold tracking-wide'>01.</span><a href="#about"> About</a></li>
+                <li className='text-zinc-400 cursor-pointer hover:text-white'><span className='text-amber-700 font-bold tracking-wide'>02.</span><a href="#projects">Projects</a></li>
                 <li className='text-zinc-400 cursor-pointer hover:text-white'><span className='text-amber-700 font-bold tracking-wide'>03.</span> Chat with AI</li>
                 <li className='text-zinc-400 cursor-pointer hover:text-white'><span className='text-amber-700 font-bold tracking-wide'>04.</span> Contact</li>
                 <li><a href="/resume.pdf" className='border-2 border-amber-700 rounded-sm text-white px-4 py-2 ml-4 hover:bg-amber-700 transition-bg cursor-pointer' download>Resume</a></li>
@@ -70,9 +64,9 @@ export default function Home() {
                                   and a strong foundation in JavaScript, Node.js, and React. 
                                   I am currently dedicated to specializing in the creation and sometimes design of innovative digital solutions.</p>
                 <div className='text-5xl flex justify-end gap-16 py-3 text-gray-600'>
-                  <AiFillLinkedin />
-                  <AiFillGithub />
-                  <AiFillMail />
+                  <a href="https://www.linkedin.com/in/francisco-di-nucci-931454247/" target="_blank" rel="noopener noreferrer"><AiFillLinkedin className='hover:text-zinc-300 cursor-pointer'/></a>
+                  <a href="https://github.com/pacodinucci" target='_blank' rel='noopener noreferrer'><AiFillGithub className='hover:text-zinc-300 cursor-pointer'/></a>
+                  <a href="mailto:franciscoldinucci@gmail.com"><AiFillMail className='hover:text-zinc-300 cursor-pointer'/></a>
                 </div>
               </div>
               <div className='relative mx-auto rounded-[70%/60%_45%_80%_90%] md:rounded-[70%/60%_45%_65%_90%] drop-shadow-[0px_15px_3px_rgba(0,0,0,0.25)] w-40 h-40 md:my-20 overflow-hidden md:h-96 md:w-96'>
@@ -80,7 +74,7 @@ export default function Home() {
               </div>
             </div>
           </section>
-          <section>
+          <section id='about'>
             <div className='min-h-screen'>
               <h4 className='text-xl text-center py-3 text-zinc-100 font-anaheim font-medium md:text-2xl'><span className='text-amber-700 font-bold tracking-wide'>01.</span> About Me</h4>
               <p className='text-md py-5 leading-8 text-zinc-300 font-firaSans md:text-xl max-w-xl mx-auto'>I believe in technology as a way of freedom, individually and collectively. We are at the gate of the 4th industrial revolution and I want to be part of the transformative era of significant changes and advancements that are driving humanity to new horizons.</p>
@@ -99,7 +93,7 @@ export default function Home() {
             </div>
           </section>
         
-          <section>
+          <section id='projects'>
             <div>
               <h4 className='text-xl text-center py-3 text-zinc-100 font-anaheim font-medium md:text-2xl'><span className='text-amber-700 font-bold tracking-wide'>02.</span> Projects</h4>
             </div>
