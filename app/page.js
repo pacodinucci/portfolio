@@ -1,7 +1,7 @@
 'use client';
 import React, { useState } from 'react';
 import {BsFillMoonStarsFill} from 'react-icons/bs';
-import {AiFillLinkedin, AiFillGithub, AiFillMail, AiOutlineDoubleRight} from 'react-icons/ai'
+import {AiFillLinkedin, AiFillGithub, AiFillMail, AiOutlineDoubleRight, AiOutlineMenu, AiOutlineClose} from 'react-icons/ai'
 import Image from 'next/image';
 import devfr from '../public/devfr.png';
 import project1 from '../public/follow.png';
@@ -13,6 +13,11 @@ import project4 from '../public/chatproject.png';
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
 
   return (
       <div className={darkMode ? 'dark' : ''}>
@@ -20,8 +25,11 @@ export default function Home() {
           <div>
           <section className="min-h-screen">
             <nav className={'py-10 mb-12 flex justify-end font-anaheim'}>
+              <button className='md:hidden z-50' onClick={toggleMenu}>
+                {isMenuOpen ? (<p className='text-white text-2xl'><AiOutlineClose/></p>) : (<p className='text-white text-2xl'><AiOutlineMenu/></p>)}
+              </button>
               {/* <h1 className='text-xl font-burtons'>welcome,</h1> */}
-              <ul className='flex justify-around md:gap-10'>
+              <ul className={`md:flex md:justify-around md:gap-10 hidden absolute py-4 md:relative`}>
                 {/* <li>
                   <BsFillMoonStarsFill className='cursor-pointer text-2xl' onClick={() => setDarkMode(!darkMode)}/>
                 </li> */}
@@ -31,6 +39,19 @@ export default function Home() {
                 <li className='text-zinc-400 cursor-pointer hover:text-white'><span className='text-amber-700 font-bold tracking-wide'>04.</span> Contact</li>
                 <li><a href="#" className='border-2 border-amber-700 rounded-sm text-white px-4 py-2 ml-4 hover:bg-amber-700 transition-bg'>Resume</a></li>
               </ul>
+              {isMenuOpen && (
+                <div
+                className='md:hidden w-full h-full absolute inset-0 bg-slate-900 z-40'
+                  onClick={toggleMenu}>
+                    <ul className='flex flex-col justify-center items-center align-middle h-full gap-10'>
+                      <li className='text-zinc-400 text-4xl cursor-pointer hover:text-white'><span className='text-amber-700 font-bold tracking-wide'>01.</span> About</li>
+                      <li className='text-zinc-400 text-4xl cursor-pointer hover:text-white'><span className='text-amber-700 font-bold tracking-wide'>02.</span> Projects</li>
+                      <li className='text-zinc-400 text-4xl cursor-pointer hover:text-white'><span className='text-amber-700 font-bold tracking-wide'>03.</span> Chat with AI</li>
+                      <li className='text-zinc-400 text-4xl cursor-pointer hover:text-white'><span className='text-amber-700 font-bold tracking-wide'>04.</span> Contact</li>
+                      <li className='py-20'><a href="#" className='border-2 border-amber-700 rounded-sm text-white text-4xl px-4 py-2 ml-4 hover:bg-amber-700 transition-bg'>Download Resume</a></li>
+                    </ul>
+                  </div>
+              )}
             </nav>
             <div className='flex flex-col-reverse md:flex-row align-middle'>
               <div className='text-left p-10 flex flex-col justify-center'>
