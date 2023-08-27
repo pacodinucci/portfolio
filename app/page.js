@@ -36,7 +36,7 @@ export default function Home() {
                   <BsFillMoonStarsFill className='cursor-pointer text-2xl' onClick={() => setDarkMode(!darkMode)}/>
                 </li> */}
                 <li className='text-zinc-400 cursor-pointer hover:text-white'><span className='text-amber-700 font-bold tracking-wide'>01.</span><a href="#about"> About</a></li>
-                <li className='text-zinc-400 cursor-pointer hover:text-white'><span className='text-amber-700 font-bold tracking-wide'>02.</span><a href="#projects">Projects</a></li>
+                <li className='text-zinc-400 cursor-pointer hover:text-white'><span className='text-amber-700 font-bold tracking-wide'>02.</span><a href="#projects"> Projects</a></li>
                 <li className='text-zinc-400 cursor-pointer hover:text-white'><span className='text-amber-700 font-bold tracking-wide'>03.</span> Chat with AI</li>
                 <li className='text-zinc-400 cursor-pointer hover:text-white'><span className='text-amber-700 font-bold tracking-wide'>04.</span> Contact</li>
                 <li><a href="/resume.pdf" className='border-2 border-amber-700 rounded-sm text-white px-4 py-2 ml-4 hover:bg-amber-700 transition-bg cursor-pointer' download>Resume</a></li>
@@ -46,8 +46,8 @@ export default function Home() {
                 className='md:hidden w-full h-full absolute inset-0 bg-slate-800 z-40'
                   onClick={toggleMenu}>
                     <ul className='flex flex-col justify-center items-center align-middle h-full gap-10'>
-                      <li className='text-zinc-400 text-xl cursor-pointer hover:text-white'><span className='text-amber-700 font-bold tracking-wide'>01.</span> About</li>
-                      <li className='text-zinc-400 text-xl cursor-pointer hover:text-white'><span className='text-amber-700 font-bold tracking-wide'>02.</span> Projects</li>
+                      <li className='text-zinc-400 text-xl cursor-pointer hover:text-white'><span className='text-amber-700 font-bold tracking-wide'>01.</span><a href="#about"> About</a></li>
+                      <li className='text-zinc-400 text-xl cursor-pointer hover:text-white'><span className='text-amber-700 font-bold tracking-wide'>02.</span><a href="#projects"> Projects</a></li>
                       <li className='text-zinc-400 text-xl cursor-pointer hover:text-white'><span className='text-amber-700 font-bold tracking-wide'>03.</span> Chat with AI</li>
                       <li className='text-zinc-400 text-xl cursor-pointer hover:text-white'><span className='text-amber-700 font-bold tracking-wide'>04.</span> Contact</li>
                       <li className='py-20'><a href="/resume.pdf" className='border-2 border-amber-700 rounded-sm text-white text-xl px-4 py-2 ml-4 hover:bg-amber-700 transition-bg'>Download Resume</a></li>
@@ -63,7 +63,7 @@ export default function Home() {
                 <p className='text-md py-5 leading-8 text-zinc-300 font-firaSans md:text-xl max-w-xl mx-auto'>I am a highly motivated individual with a passion for programming 
                                   and a strong foundation in JavaScript, Node.js, and React. 
                                   I am currently dedicated to specializing in the creation and sometimes design of innovative digital solutions.</p>
-                <div className='text-5xl flex justify-end gap-16 py-3 text-gray-600'>
+                <div className='text-5xl flex justify-center md:justify-end gap-16 py-3 text-gray-600'>
                   <a href="https://www.linkedin.com/in/francisco-di-nucci-931454247/" target="_blank" rel="noopener noreferrer"><AiFillLinkedin className='hover:text-zinc-300 cursor-pointer'/></a>
                   <a href="https://github.com/pacodinucci" target='_blank' rel='noopener noreferrer'><AiFillGithub className='hover:text-zinc-300 cursor-pointer'/></a>
                   <a href="mailto:franciscoldinucci@gmail.com"><AiFillMail className='hover:text-zinc-300 cursor-pointer'/></a>
