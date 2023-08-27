@@ -19,9 +19,17 @@ export default function Home() {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const DownloadButton = () => {
+    return (
+      <a href="../public/resume.pdf" download>
+        <button>Descargar PDF</button>
+      </a>
+    );
+  };
+
   return (
       <div className={darkMode ? 'dark' : ''}>
-        <main className=' bg-slate-900 px-4 md:px-8'>
+        <main className=' bg-slate-800 px-4 md:px-8'>
           <div>
           <section className="min-h-screen">
             <nav className={'py-10 mb-12 flex justify-end font-anaheim'}>
@@ -37,18 +45,18 @@ export default function Home() {
                 <li className='text-zinc-400 cursor-pointer hover:text-white'><span className='text-amber-700 font-bold tracking-wide'>02.</span> Projects</li>
                 <li className='text-zinc-400 cursor-pointer hover:text-white'><span className='text-amber-700 font-bold tracking-wide'>03.</span> Chat with AI</li>
                 <li className='text-zinc-400 cursor-pointer hover:text-white'><span className='text-amber-700 font-bold tracking-wide'>04.</span> Contact</li>
-                <li><a href="#" className='border-2 border-amber-700 rounded-sm text-white px-4 py-2 ml-4 hover:bg-amber-700 transition-bg'>Resume</a></li>
+                <li><a href="/resume.pdf" className='border-2 border-amber-700 rounded-sm text-white px-4 py-2 ml-4 hover:bg-amber-700 transition-bg cursor-pointer' download>Resume</a></li>
               </ul>
               {isMenuOpen && (
                 <div
-                className='md:hidden w-full h-full absolute inset-0 bg-slate-900 z-40'
+                className='md:hidden w-full h-full absolute inset-0 bg-slate-800 z-40'
                   onClick={toggleMenu}>
                     <ul className='flex flex-col justify-center items-center align-middle h-full gap-10'>
                       <li className='text-zinc-400 text-4xl cursor-pointer hover:text-white'><span className='text-amber-700 font-bold tracking-wide'>01.</span> About</li>
                       <li className='text-zinc-400 text-4xl cursor-pointer hover:text-white'><span className='text-amber-700 font-bold tracking-wide'>02.</span> Projects</li>
                       <li className='text-zinc-400 text-4xl cursor-pointer hover:text-white'><span className='text-amber-700 font-bold tracking-wide'>03.</span> Chat with AI</li>
                       <li className='text-zinc-400 text-4xl cursor-pointer hover:text-white'><span className='text-amber-700 font-bold tracking-wide'>04.</span> Contact</li>
-                      <li className='py-20'><a href="#" className='border-2 border-amber-700 rounded-sm text-white text-4xl px-4 py-2 ml-4 hover:bg-amber-700 transition-bg'>Download Resume</a></li>
+                      <li className='py-20'><a href="/resume.pdf" className='border-2 border-amber-700 rounded-sm text-white text-4xl px-4 py-2 ml-4 hover:bg-amber-700 transition-bg'>Download Resume</a></li>
                     </ul>
                   </div>
               )}
