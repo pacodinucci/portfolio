@@ -34,7 +34,7 @@ export default function Home() {
           <section className="min-h-screen">
             <nav className={'py-10 mb-12 flex justify-end font-anaheim'}>
               <button className='md:hidden z-50' onClick={toggleMenu}>
-                {isMenuOpen ? (<p className='text-white text-2xl'><AiOutlineClose/></p>) : (<p className='text-white text-2xl'><AiOutlineMenu/></p>)}
+                {isMenuOpen ? (<p className='text-zinc-300 text-2xl'><AiOutlineClose/></p>) : (<p className='text-zinc-300 text-2xl'><AiOutlineMenu/></p>)}
               </button>
               {/* <h1 className='text-xl font-burtons'>welcome,</h1> */}
               <ul className={`md:flex md:justify-around md:gap-10 hidden absolute py-4 md:relative`}>
@@ -63,9 +63,9 @@ export default function Home() {
             </nav>
             <div className='flex flex-col-reverse md:flex-row align-middle'>
               <div className='text-left p-10 flex flex-col justify-center'>
-                <h4 className='text-3xl py-2 text-zinc-400 font-anaheim font-medium md:text-2xl'>Hi, my name is</h4>
+                <h4 className='text-3xl py-2 text-zinc-400 font-anaheim font-medium md:text-2xl'><span className='text-amber-700 font-semibold'>Hi,</span> my name is</h4>
                 <h2 className='text-6xl py-2 text-zinc-100 font-firaSans font-bold md:text-6xl'>Francisco Di Nucci</h2>
-                <h3 className='text-2xl py-2 text-zinc-200 font-firaSans md:text-3xl'>I am a Fullstack Developer.</h3>
+                <h3 className='text-2xl py-2 text-zinc-100 font-firaSans md:text-3xl'>I am a Fullstack Developer.</h3>
                 <p className='text-md py-5 leading-8 text-zinc-300 font-firaSans md:text-xl max-w-xl mx-auto'>I am a highly motivated individual with a passion for programming 
                                   and a strong foundation in JavaScript, Node.js, and React. 
                                   I am currently dedicated to specializing in the creation and sometimes design of innovative digital solutions.</p>
