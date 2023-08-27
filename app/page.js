@@ -86,7 +86,7 @@ export default function Home() {
                   <li className='flex gap-2 items-center'><AiOutlineDoubleRight className='text-amber-700'/><span>Typescript</span> </li>
                   <li className='flex gap-2 items-center'><AiOutlineDoubleRight className='text-amber-700'/><span>NodeJS</span> </li>
                   <li className='flex gap-2 items-center'><AiOutlineDoubleRight className='text-amber-700'/><span>React</span> </li>
-                  <li className='flex gap-2 items-center'><AiOutlineDoubleRight className='text-amber-700'/><span>PostgresSQL</span></li>
+                  <li className='flex gap-2 items-center'><AiOutlineDoubleRight className='text-amber-700'/><span>SQL and NoSQL</span></li>
                   <li className='flex gap-2 items-center'><AiOutlineDoubleRight className='text-amber-700'/><span>Docker</span></li>
                 </ul>
               </div>
